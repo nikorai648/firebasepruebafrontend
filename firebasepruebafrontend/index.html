@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseñar a Cocinar</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            text-align: center;
+        }
+        h1, h2, h3, h4, h5 {
+            color: black;
+        }
+        p {
+            font-size: 18px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        input, button {
+            display: block;
+            margin: 10px auto;
+        }
+        menu {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+    </style>
+    <script type="module" src="./assets/js/firebase.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+</head>
+<body>
+    <h1>Enseñar a Cocinar</h1>
+    <h2>Aprendiendo a Cocinar</h2>
+    <p>En esta página se explica los motivos y formas en que te podemos ayudar a cocinar.</p>
+
+    <h1>Objetivos de la Página</h1>
+    <section>
+        <p>Los objetivos de esta página son ayudar a las personas a aprender a cocinar.</p>
+    </section>
+
+    <section>
+        <h2>Formas de Lograr el Objetivo</h2>
+        <p>Las formas de lograr nuestro objetivo son mediante recursos como videos de chefs en áreas específicas de gastronomía o ubicaciones de lugares donde se imparten clases de gastronomía.</p>
+    </section>
+
+    <section>
+        <h3>Recursos Disponibles</h3>
+        <p>En esta página tenemos varios recursos disponibles para tu deseo de aprender a cocinar, desde videos de chefs hasta cursos presenciales.</p>
+    </section>
+
+    <section>
+        <h4>Garantía de Comida de Calidad</h4>
+        <p>Nos enorgullecemos de usar solo productos en buen estado para nuestras clases, siempre asegurando la calidad de los ingredientes.</p>
+    </section>
+
+    <section>
+        <h5>Ventajas de Tomar Nuestros Cursos</h5>
+        <p>Tomar nuestros cursos o ver nuestros videos puede ayudarte a obtener un diploma que te podría facilitar conseguir empleo en el sector gastronómico.</p>
+    </section>
+
+    <h1>Formulario de Registro</h1>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="apellido" placeholder="Apellido">
+    <input type="text" id="rut" placeholder="Rut">
+    <input type="email" id="correo" placeholder="Correo">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="date" id="fechaNacimiento" placeholder="Fecha de nacimiento">
+    <button id="btnRegistrar">Registrar</button>
+
+    <table id="tPersonas">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Rut</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Actualizar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tbPersonas"></tbody>
+    </table>
+
+    <h1>Modificar</h1>
+    <input type="text" id="UPDnombre" placeholder="Nombre">
+    <input type="text" id="UPDapellido" placeholder="Apellido">
+    <input type="text" id="UPDrut" placeholder="Rut">
+    <input type="email" id="UPDcorreo" placeholder="Correo">
+    <input type="number" id="UPDedad" placeholder="Edad">
+    <input type="date" id="UPDfechaNacimiento" placeholder="Fecha de nacimiento">
+    <button id="btnActualizar">Actualizar</button>
+
+    <h1>Eliminar</h1>
+    <input type="text" id="DELnombre" placeholder="Nombre" disabled>
+    <input type="text" id="DELapellido" placeholder="Apellido" disabled>
+    <input type="text" id="DELrut" placeholder="Rut" disabled>
+    <input type="email" id="DELcorreo" placeholder="Correo" disabled>
+    <input type="number" id="DELedad" placeholder="Edad" disabled>
+    <input type="date" id="DELfechaNacimiento" placeholder="Fecha de nacimiento" disabled>
+    <button id="btnEliminar">Eliminar</button>
+
+    <p>El menú de selección de la página es el siguiente:</p>
+    <menu>
+        <li>Objetivos de la Página</li>
+        <li>Formas de Lograr el Objetivo</li>
+        <li>Recursos Disponibles</li>
+        <li>Garantía de Comida de Calidad</li>
+        <li>Ventajas de Tomar Nuestros Cursos</li>
+    </menu>
+</body>
+</html>
